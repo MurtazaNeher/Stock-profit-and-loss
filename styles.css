@@ -118,6 +118,8 @@
         padding-bottom: 1rem;
         overflow: hidden;
         color: yellow;
+        border-radius: 10rem;
+        width: max-content;
     }
     
     .footer-item {
@@ -162,7 +164,7 @@
             overflow: hidden;
             color: yellow;
             background-color: transparent;
-            width: 100%;
+            width: max-content;
         }
         .footer-item {
             display: inline;

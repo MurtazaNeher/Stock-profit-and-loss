@@ -28,6 +28,7 @@ function checkProfitAndLoss() {
             body.style.background = " url(/images/profit.gif)";
             container.style.backgroundColor = "#273238";
             heading.style.backgroundColor = "#273238";
+            footer.style.backgroundColor = "black";
 
             outputBox.innerText = "Hey the profit is " + profit[0].toFixed(2) + "\n and the profit percent is " + profit[1].toFixed(2) + "%";
         } else if (ip > cp) {
@@ -41,7 +42,7 @@ function checkProfitAndLoss() {
             body.style.background = "url(/images/loss.gif)";
             container.style.backgroundColor = "#273238";
             heading.style.backgroundColor = "#273238";
-
+            footer.style.backgroundColor = "black";
 
 
             outputBox.innerText = "Hey the loss is " + loss[0].toFixed(2) + "\n and the loss percent is " + loss[1].toFixed(2) + "%";
@@ -86,6 +87,8 @@ function clear() {
     body.style.backgroundColor = "#273238";
     container.style.backgroundColor = "rgba(0, 0, 0, 0.4)";
     outputBox.style.backgroundColor = "transparent";
+    footer.style.backgroundColor = "transparent";
+
 }
 
 checkBtn.addEventListener('click', checkProfitAndLoss);
