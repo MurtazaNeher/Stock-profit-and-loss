@@ -1,0 +1,193 @@
+    @import url('https://fonts.googleapis.com/css2?family=Gideon+Roman&family=Source+Serif+4&display=swap');
+     :root {
+        --primary-color: black;
+        --background-color: #273238;
+        --font-color: yellow;
+    }
+    
+    body {
+        text-align: center;
+        background-color: var(--background-color);
+        font-family: 'Gideon Roman', cursive;
+    }
+    
+    .container {
+        background-color: rgba(0, 0, 0, 0.4);
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        padding: 2rem;
+        margin: auto;
+        margin-top: 2rem;
+        border: 2px solid yellow;
+        padding: 1rem;
+        border-radius: 5px;
+        box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.4);
+    }
+    
+    #heading {
+        color: var(--font-color);
+        text-decoration: underline overline double red 3px;
+        width: max-content;
+        margin: auto;
+        margin-top: 2rem;
+        box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.4);
+        display: block;
+    }
+    
+    label {
+        font-size: larger;
+        color: var(--font-color);
+    }
+    
+    input {
+        width: 190px;
+        height: 30px;
+        padding: 0.8rem;
+        margin: auto;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        font-size: 28px;
+        border: 2px solid white;
+        background-color: var(--background-color);
+        color: var(--font-color);
+        border-radius: 0.5rem;
+    }
+    
+     :placeholder-shown {
+        font-size: 14px;
+    }
+    
+    #check-btn {
+        width: 90px;
+        margin: auto;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        font-size: large;
+        background-color: var(--font-color);
+        color: black;
+        border: 2px solid black;
+        border-radius: 5px;
+    }
+    
+    #check-btn:hover {
+        color: var(--font-color);
+        background-color: black;
+        cursor: pointer;
+        border: 2px solid white;
+        box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.4);
+        transition: 0.3s;
+    }
+    
+    #clear-btn {
+        width: 90px;
+        margin: auto;
+        margin-top: 1rem;
+        font-size: large;
+        background-color: red;
+        color: white;
+        border: 2px solid black;
+        border-radius: 5px;
+    }
+    
+    #clear-btn:hover {
+        color: var(--font-color);
+        background-color: black;
+        cursor: pointer;
+        border: 2px solid white;
+        box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.4);
+        transition: 0.3s;
+    }
+    
+    #output-box {
+        padding: 1rem;
+        margin: auto;
+        margin-top: 2rem;
+        color: white;
+        font-size: 31px;
+        width: max-content;
+        width: max-content;
+    }
+    
+    .footer {
+        list-style-type: none;
+        margin: auto;
+        margin-top: 2rem;
+        text-align: center;
+        padding: 0;
+        padding-bottom: 1rem;
+        overflow: hidden;
+        color: yellow;
+    }
+    
+    .footer-item {
+        display: inline;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        font-size: 20px;
+    }
+    
+    .footer-head {
+        display: block;
+        color: white;
+        margin-bottom: 1.5rem;
+    }
+    
+    .logo {
+        font-size: 30px;
+        color: yellow;
+        text-decoration: none;
+    }
+    
+    .logo:hover {
+        color: white;
+        transition: 0.2s;
+    }
+    
+    @media (max-width: 900px) {
+        .container {
+            width: 70%;
+        }
+        #output-box {
+            font-size: 16px;
+            padding: 0.2rem;
+        }
+        .footer {
+            list-style-type: none;
+            margin: auto;
+            margin-top: 2rem;
+            text-align: center;
+            padding: 0;
+            padding-bottom: 1rem;
+            overflow: hidden;
+            color: yellow;
+            background-color: transparent;
+            width: 100%;
+        }
+        .footer-item {
+            display: inline;
+            padding-left: 0.4rem;
+            padding-right: 0.rem;
+            font-size: 20px;
+        }
+        .footer-head {
+            display: block;
+            color: white;
+            margin-bottom: 1.5rem;
+        }
+        .logo {
+            font-size: 30px;
+            color: yellow;
+            text-decoration: none;
+        }
+        #heading {
+            color: var(--font-color);
+            text-decoration: underline overline double red 3px;
+            width: max-content;
+            margin: auto;
+            margin-top: 2rem;
+            box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.4);
+            display: block;
+            font-size: 22px;
+        }
+    }
