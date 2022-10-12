@@ -14,6 +14,7 @@ function checkProfitAndLoss() {
     let qty = Number(quantity.value);
     let cp = Number(currentPrice.value);
 
+    console.log(ip,qty,cp);
     if (ip>0 && qty>0 && cp>0) {
 
         if (cp > ip) {
