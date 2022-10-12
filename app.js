@@ -14,7 +14,7 @@ function checkProfitAndLoss() {
     let qty = Number(quantity.value);
     let cp = Number(currentPrice.value);
 
-    if (ip, qty, cp) {
+    if (ip>0 && qty>0 && cp>0) {
 
         if (cp > ip) {
             let profit = calculateProfit(ip, qty, cp);
@@ -50,7 +50,7 @@ function checkProfitAndLoss() {
             outputBox.innerText = "No pain no gain , No gain no pain :)";
         }
     } else {
-        outputBox.innerText = "Please fill all the fields";
+        outputBox.innerText = "Please fill all the fields with positive numbers.";
     }
 
 }
